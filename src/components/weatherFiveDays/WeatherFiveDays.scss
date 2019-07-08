@@ -1,0 +1,165 @@
+.weather {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__days-of-week {
+    height: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px #aaaaaa;
+  }
+  &__day {
+    padding-left: 15px;
+  }
+  &__btn {
+    padding-right: 15px;
+  }
+  &__weather-of-day {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+  }
+  &__block-info {
+    width: 150px;
+    padding-top: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  &__description {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .weather {
+    &__days-of-week {
+      width: 300px;
+    }
+    &__days-table {
+      width: 400px;
+    }
+    &__weather-of-day {
+      @media screen and(-webkit-min-device-pixel-ratio:0) {
+        width: 300px;
+      }
+      overflow-x: scroll;
+    }
+  }
+  @-moz-document url-prefix() {
+    .weather {
+      &__weather-of-day {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500.1px) and (max-width: 768px) {
+  .weather {
+    &__days-of-week {
+      width: 350px;
+    }
+    &__days-table {
+      width: 400px;
+    }
+    &__weather-of-day {
+      @media screen and(-webkit-min-device-pixel-ratio:0) {
+        width: 350px;
+      }
+      overflow-x: scroll;
+    }
+  }
+  @-moz-document url-prefix() {
+    .weather {
+      &__weather-of-day {
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768.1px) and (max-width: 1200px){
+  .weather {
+    &__block-info {
+    }
+    &__days-of-week {
+      width: 400px;
+    }
+    &__days-table {
+      width: 300px;
+    }
+    &__weather-of-day {
+      @media screen and(-webkit-min-device-pixel-ratio:0) {
+        width: 400px;
+      }
+      overflow-x: scroll;
+    }
+  }
+  @-moz-document url-prefix() {
+    .weather {
+      &__weather-of-day {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200.1px){
+  .weather {
+    &__block-info {
+    }
+    &__days-of-week {
+      width: 450px;
+    }
+    &__days-table {
+      width: 300px;
+    }
+    &__weather-of-day {
+      @media screen and(-webkit-min-device-pixel-ratio:0) {
+        width: 450px;
+      }
+      overflow-x: scroll;
+    }
+  }
+  @-moz-document url-prefix() {
+    .weather {
+      &__weather-of-day {
+        width: 450px;
+      }
+    }
+  }
+}
+
+.example-enter {
+  opacity: 0.01;
+  height: 0;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  height: 140px;
+  transition: 800ms;
+  overflow-y: hidden;
+}
+
+.example-leave {
+  opacity: 1;
+  height: 140px;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  height: 0;
+  transition: 800ms;
+  overflow-y: hidden;
+}

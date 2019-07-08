@@ -1,0 +1,124 @@
+.weather-wrapper {
+  text-align: right;
+  .display-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    padding-top: 20px;
+    .info-block {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      .row {
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        &__country {
+          margin-left: 10px;
+        }
+      }
+      &__temp {
+        text-align: right;
+        font-size: 3rem;
+        font-weight: lighter;
+        padding-top: 7px;
+      }
+    }
+    .imagine-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      i.wi {
+        padding-bottom: 10px;
+        font-size: 4rem;
+        color: #000;
+      }
+      &__description {
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .weather-wrapper {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .display-weather {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .info-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+        .row {
+          display: inline-flex;
+          flex-direction: row;
+          justify-content: center;
+          &__city {
+            text-align: center;
+          }
+        }
+        &__temp {
+          text-align: center;
+          padding-top: 7px;
+        }
+      }
+      .imagine-block {
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 500.1px) {
+  .weather-wrapper {
+    text-align: center;
+    .display-weather {
+      .info-block {
+        .row {
+          width: 200px;
+          display: inline-flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500.1px) and (max-width: 768px) {
+  .weather-wrapper {
+    text-align: center;
+    .display-weather {
+      width: 480px;
+      .info-block {
+        .row {
+          display: inline-flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+      }
+      .imagine-block {
+        width: 240px;
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768.1px) {
+  .imagine-block {
+    width: 200px;
+  }
+}

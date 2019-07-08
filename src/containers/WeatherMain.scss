@@ -1,0 +1,39 @@
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 500.1px) and (max-width: 768px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .title {
+    padding-top: 10px;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1200.1px) {
+  .title {
+    padding-top: 10px;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

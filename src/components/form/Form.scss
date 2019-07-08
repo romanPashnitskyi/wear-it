@@ -1,0 +1,88 @@
+* {
+  outline: none;
+  .form-wrapper {
+    width: 100%;
+    .location {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      input[type=text] {
+        border: 1.5px solid #a8bcba;
+        border-radius: 10px;
+        line-height: 2rem;
+        background-color: rgba(255,255,255, 1);
+        box-sizing: border-box;
+        text-align: center;
+        width: 200px;
+      }
+      input[type=submit] {
+        border: none;
+        color: white;
+        font-weight: lighter;
+        background-color:#a8bcba;
+        transition: 0.6s;
+        margin-top: 20px;
+      }
+      input[type=submit]:hover {
+        cursor: pointer;
+        background-color: #7ea0a9;
+        transition: 0.6s;
+      }
+    }
+  }
+}
+
+.warning {
+  text-align: center;
+  color: darkred;
+}
+
+@media only screen and (max-width: 500px){
+  .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      margin-top: 25px;
+    }
+    input[type=submit] {
+      height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 500.1px) and (max-width: 768px) {
+  input {
+    margin-top: 25px;
+  }
+  input[type=submit] {
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 768.1px) and (max-width: 1200px) {
+  .form-wrapper {
+    height:70px;
+    input {
+      margin-top: 30px;
+    }
+    input[type=submit] {
+      height: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200.1px) {
+  .form-wrapper {
+    height:70px;
+    input {
+      margin-top: 30px;
+    }
+    input[type=submit] {
+      height: 30px;
+    }
+  }
+}

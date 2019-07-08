@@ -1,0 +1,64 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(22deg, #e8f442 2%, #c0e6fc 20%, #98e8f7 28%, #009597 60%, #05464c 85%, #012f34);
+  background-size: cover;
+}
+
+.app {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.90);
+  font-family: 'Voltaire', sans-serif;
+}
+
+@media only screen and (max-width: 500px){
+  .app {
+    width: 95vw;
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 500.1px) and (max-width: 768px) {
+  .app {
+    width: 490px;
+    min-height: 600px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768.1px) and (max-width: 1200px) {
+  .app {
+    width: 650px;
+    min-height: 560px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200.1px) {
+  .app {
+    width: 700px;
+    margin: 10px auto;
+    min-height: 560px;
+  }
+}
+
+/* * {
+	box-sizing: border-box;
+} */
+
+/*
+1) small phones  <=500px
+2) usual phones 500.1px - 767.9px
+3) hi-res phones & pads 768px - 992px
+4) big pads & small desktops 992.1px - 1200px
+5) desktops >= 1200px
+*/
